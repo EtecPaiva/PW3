@@ -1,0 +1,15 @@
+.page-container {
+    text-align: center;
+    color: white;
+    padding: 50px 20px;
+}
+
+.page-container h1 {
+    color: #FFD700;
+    margin-bottom: 20px;
+}
+
+.page-container p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}

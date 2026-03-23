@@ -1,0 +1,300 @@
+{
+  "selecoes": [
+    {
+      "id": 1,
+      "nome": "Brasil",
+      "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/0/05/Flag_of_Brazil.svg/1200px-Flag_of_Brazil.svg.png",
+      "grupo": "G",
+      "conquistas": [
+        {
+          "ano": 1958,
+          "pais": "Suécia"
+        },
+        {
+          "ano": 1962,
+          "pais": "Chile"
+        },
+        {
+          "ano": 1970,
+          "pais": "México"
+        },
+        {
+          "ano": 1994,
+          "pais": "Estados Unidos"
+        },
+        {
+          "ano": 2002,
+          "pais": "Coreia do Sul/Japão"
+        }
+      ],
+      "jogadores": [
+        {
+          "id": 1,
+          "nome": "Neymar",
+          "camisa": 10,
+          "posicao": "Atacante",
+          "titular": true,
+          "gols": 79
+        },
+        {
+          "id": 2,
+          "nome": "Alisson",
+          "camisa": 1,
+          "posicao": "Goleiro",
+          "titular": true,
+          "gols": 0
+        },
+        {
+          "id": 3,
+          "nome": "Casemiro",
+          "camisa": 5,
+          "posicao": "Volante",
+          "titular": true,
+          "gols": 12
+        }
+      ]
+    },
+   
+    {
+      "id": 2,
+      "nome": "França",
+      "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/c/c3/Flag_of_France.svg/1200px-Flag_of_France.svg.png",
+      "grupo": "D",
+      "conquistas": [
+        {
+          "ano": 1998,
+          "pais": "França"
+        },
+        {
+          "ano": 2018,
+          "pais": "Rússia"
+        }
+      ],
+      "jogadores": [
+        {
+          "id": 1,
+          "nome": "Kylian Mbappé",
+          "camisa": 10,
+          "posicao": "Atacante",
+          "titular": true,
+          "gols": 30
+        },
+        {
+          "id": 2,
+          "nome": "Hugo Lloris",
+          "camisa": 1,
+          "posicao": "Goleiro",
+          "titular": true,
+          "gols": 0
+        },
+        {
+          "id": 3,
+          "nome": "N'Golo Kanté",
+          "camisa": 7,
+          "posicao": "Meio-campista"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "nome": "Alemanha",
+      "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/b/ba/Flag_of_Germany.svg/1200px-Flag_of_Germany.svg.png",
+      "grupo": "E",
+      "conquistas": [
+        {
+          "ano": 1954,
+          "pais": "Suíça"
+        },
+        {
+          "ano": 1974,
+          "pais": "Alemanha Ocidental"
+        },
+        {
+          "ano": 1990,
+          "pais": "Itália"
+        },
+        {
+          "ano": 2014,
+          "pais": "Brasil"
+        }
+      ],
+      "jogadores": [
+        {
+          "id": 1,
+          "nome": "Manuel Neuer",
+          "camisa": 1,
+          "posicao": "Goleiro",
+          "titular": true,
+          "gols": 0
+        },
+        {
+          "id": 2,
+          "nome": "Toni Kroos",
+          "camisa": 8,
+          "posicao": "Meio-campista",
+          "titular": true,
+          "gols": 5
+        }
+      ]
+    },
+    
+    {
+      "id": 4,
+      "nome": "Espanha",
+      "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/9/9a/Flag_of_Spain.svg/1200px-Flag_of_Spain.svg.png",
+      "grupo": "B",
+      "conquistas": [
+        {
+          "ano": 2010,
+          "pais": "África do Sul"
+        }
+      ],
+      "jogadores": [
+        {
+          "id": 1,
+          "nome": "Sergio Ramos",
+          "camisa": 15,
+          "posicao": "Defensor",
+          "titular": true,
+          "gols": 23
+        },
+        {
+          "id": 2,
+          "nome": "Andrés Iniesta",
+          "camisa": 6,
+          "posicao": "Meio-campista",
+          "titular": true,
+          "gols": 13
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "nome": "Argentina",
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Flag_of_Argentina.svg/1280px-Flag_of_Argentina.svg.png ",
+      "grupo": "C",
+      "conquistas": [
+        {
+          "ano": 1978,
+          "pais": "Argentina"
+        },
+        {
+          "ano": 1986,
+          "pais": "México"
+        }
+      ],
+      "jogadores": [
+        {
+          "id": 1,
+          "nome": "Lionel Messi",
+          "camisa": 10,
+          "posicao": "Atacante",
+          "titular": true,
+          "gols": 80
+        },
+        {
+          "id": 2,
+          "nome": "Ángel Di María",
+          "camisa": 11,
+          "posicao": "Atacante",
+          "titular": true,
+          "gols": 25
+    }
+        ]
+  },
+  {
+      "id": 6,
+      "nome": "Inglaterra",
+      "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/b/be/Flag_of_England.svg/1200px-Flag_of_England.svg.png",
+      "grupo": "A",
+      "conquistas": [
+        {
+          "ano": 1966,
+          "pais": "Inglaterra"
+        }
+      ],
+      "jogadores": [
+        {
+          "id": 1,
+          "nome": "Harry Kane",
+          "camisa": 9,
+          "posicao": "Atacante",
+          "titular": true,
+          "gols": 50
+        },
+        {
+          "id": 2,
+          "nome": "Jordan Henderson",
+          "camisa": 14,
+          "posicao": "Meio-campista",
+          "titular": true,
+          "gols": 5
+        }
+       ]
+  },
+  {
+      "id": 7,
+      "nome": "Portugal",
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Flag_of_Portugal.svg/1280px-Flag_of_Portugal.svg.png",
+      "grupo": "H",
+      "conquistas": [
+        {
+          "ano": 2016,
+          "pais": "França"
+        }
+      ],
+      "jogadores": [
+        {
+          "id": 1,
+          "nome": "Cristiano Ronaldo",
+          "camisa": 7,
+          "posicao": "Atacante",
+          "titular": true,
+          "gols": 110
+        },
+        {
+          "id": 2,
+          "nome": "Bruno Fernandes",
+          "camisa": 8,
+          "posicao": "Meio-campista",
+          "titular": true,
+          "gols": 15
+        }
+       ]
+    },
+     {
+      "id": 8,
+      "nome": "Uruguai",
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Flag_of_Uruguay.svg/1280px-Flag_of_Uruguay.svg.png",
+      "grupo": "F",
+      "conquistas": [
+        {
+          "ano": 1930,
+          "pais": "Uruguai"
+        },
+        {
+          "ano": 1950,
+          "pais": "Brasil"
+        }
+      ],
+      "jogadores": [
+        {
+          "id": 1,
+          "nome": "Luis Suárez",
+          "camisa": 9,
+          "posicao": "Atacante",
+          "titular": true,
+          "gols": 60
+        },
+        {
+          "id": 2,
+          "nome": "Edinson Cavani",
+          "camisa": 21,
+          "posicao": "Atacante",
+          "titular": true,
+          "gols": 50
+        }
+       ]
+     }
+  ]
+}
