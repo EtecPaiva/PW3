@@ -4,25 +4,10 @@
     box-sizing: border-box;
 }
 
-:root {
-    --bg-0: #072012;
-    --bg-1: #0b3d0b;
-    --bg-2: #2e7d32;
-    --accent: #ffd700;
-    --accent-2: #2e7d32;
-    --muted: #6b7280;
-    --card-bg: rgba(255,255,255,0.95);
-    --glass: rgba(255,255,255,0.06);
-    --max-w: 1200px;
-}
-
 body {
-    font-family: Inter, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
     line-height: 1.6;
-    color: #fff;
-    background-color: var(--bg-0);
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+    color: #333;
 }
 
 a {
@@ -32,19 +17,4 @@ a {
 
 button {
     cursor: pointer;
-}
-
-img {
-    display: block;
-    max-width: 100%;
-}
-
-.container {
-    max-width: var(--max-w);
-    margin: 0 auto;
-    padding: 0 16px;
-}
-
-h1, h2, h3, h4 {
-    line-height: 1.1;
 }

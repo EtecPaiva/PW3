@@ -1,0 +1,26 @@
+/* Football Theme */
+body {
+    background: linear-gradient(to bottom, #4CAF50, #2E7D32);
+    min-height: 100vh;
+    padding-bottom: 80px; /* Space for fixed footer */
+}
+
+.page-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.btn {
+    background: #FFD700;
+    color: #2E7D32;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background: #FFC107;
+}
