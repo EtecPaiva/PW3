@@ -1,15 +1,24 @@
 .page-container {
+.page-container {
     text-align: center;
     color: white;
-    padding: 50px 20px;
+    padding: 10px 20px 30px 20px;
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .page-container h1 {
-    color: #FFD700;
-    margin-bottom: 20px;
+    color: var(--accent);
+    margin-bottom: 10px;
+    font-size: 2rem;
 }
 
 .page-container p {
-    font-size: 1.2em;
-    margin-bottom: 30px;
+    font-size: 1.05rem;
+    margin-bottom: 18px;
+    color: rgba(255,255,255,0.95);
 }

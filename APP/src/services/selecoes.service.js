@@ -4,7 +4,7 @@ import { GET, POST, DELETE, PUT, PATCH } from "./http.js";
 const getSelecoes = async () => {
     return await GET(routes.selecoes);
 };
-
+    
 const postSelecao = async (data) => {
     return await POST(routes.selecoes, data);
 };
