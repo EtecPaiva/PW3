@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#f6f3ee">
+    <title>Taskflow • Gestão de Tarefas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="app-shell">
+        <section id="secao-auth" class="auth-screen">
+            <div class="auth-brand">
+                <div class="brand-mark" aria-hidden="true">
+                    <span></span><span></span><span></span>
+                </div>
+                <div>
+                    <strong>Taskflow</strong>
+                    <small>Organize. Priorize. Conclua.</small>
+                </div>
+            </div>
+
+            <div class="auth-layout">
+                <div class="auth-intro">
+                    <p class="eyebrow">SEU ESPAÇO DE PRODUTIVIDADE</p>
+                    <h1>Transforme sua lista em um <em>fluxo</em> de trabalho.</h1>
+                    <p class="auth-description">Um painel simples para registrar, acompanhar e concluir suas tarefas sem perder o que realmente importa.</p>
+
+                    <div class="feature-row">
+                        <div class="feature-pill"><span class="feature-dot"></span> Cadastro rápido</div>
+                        <div class="feature-pill"><span class="feature-dot"></span> Acompanhamento visual</div>
+                        <div class="feature-pill"><span class="feature-dot"></span> Tudo no seu ritmo</div>
+                    </div>
+                </div>
+
+                <div class="auth-card">
+                    <div class="auth-card-head">
+                        <div>
+                            <p class="eyebrow">ACESSO</p>
+                            <h2 id="titulo-auth">Login</h2>
+                        </div>
+                        <div class="auth-status"><span></span> Sistema online</div>
+                    </div>
+
+                    <div class="form-stack">
+                        <label class="field" id="campo-nome">
+                            <span>Nome</span>
+                            <input type="text" id="nome" placeholder="Como podemos chamar você?" autocomplete="name" style="display:none">
+                        </label>
+                        <label class="field">
+                            <span>E-mail</span>
+                            <input type="email" id="email" placeholder="voce@email.com" autocomplete="email">
+                        </label>
+                        <label class="field">
+                            <span>Senha</span>
+                            <input type="password" id="senha" placeholder="Digite sua senha" autocomplete="current-password">
+                        </label>
+                    </div>
+
+                    <button class="primary-action" onclick="enviarAuth()" id="btn-auth">Entrar <span>→</span></button>
+                    <p class="auth-switch">Ainda não tem uma conta? <a href="#" onclick="alternarModo(); return false;" id="link-toggle">Criar conta</a></p>
+                </div>
+            </div>
+
+            <footer class="auth-footer">Atividade acadêmica • Interface renovada</footer>
+        </section>
+
+        <section id="secao-tarefas" class="workspace" style="display:none">
+            <aside class="sidebar">
+                <div class="sidebar-brand">
+                    <div class="brand-mark small" aria-hidden="true"><span></span><span></span><span></span></div>
+                    <div><strong>Taskflow</strong><small>Meu painel</small></div>
+                </div>
+
+                <div class="sidebar-profile">
+                    <div class="avatar" id="avatar-inicial">T</div>
+                    <div>
+                        <strong id="nome-usuario">Minha conta</strong>
+                        <small>Área pessoal</small>
+                    </div>
+                </div>
+
+                <nav class="side-nav" aria-label="Navegação principal">
+                    <a class="active" href="#lista" onclick="listarTarefas(); return false;"><span>▦</span> Minhas tarefas</a>
+                    <a href="#nova" onclick="document.getElementById('titulo').focus(); return false;"><span>＋</span> Nova tarefa</a>
+                </nav>
+
+                <div class="sidebar-tip">
+                    <span class="tip-icon">✦</span>
+                    <strong>Pequenos passos</strong>
+                    <p>Concluir uma tarefa de cada vez já é progresso.</p>
+                </div>
+
+                <button class="logout-button" onclick="sair()"><span>↪</span> Sair</button>
+            </aside>
+
+            <div class="content-area">
+                <header class="topbar">
+                    <div>
+                        <p class="eyebrow">VISÃO GERAL</p>
+                        <h1>Minhas tarefas</h1>
+                    </div>
+                    <div class="topbar-date" id="data-atual">Hoje</div>
+                </header>
+
+                <section class="hero-panel">
+                    <div>
+                        <p class="eyebrow">MANTENHA O RITMO</p>
+                        <h2>Uma tarefa concluída muda o seu dia.</h2>
+                        <p>Adicione o que precisa ser feito, acompanhe o andamento e marque como concluído quando finalizar.</p>
+                    </div>
+                    <div class="hero-illustration" aria-hidden="true">
+                        <div class="hero-ring ring-a"></div>
+                        <div class="hero-ring ring-b"></div>
+                        <div class="hero-check">✓</div>
+                    </div>
+                </section>
+
+                <section class="workspace-grid">
+                    <div class="panel task-create" id="nova">
+                        <div class="panel-heading">
+                            <div>
+                                <p class="eyebrow">ADICIONAR</p>
+                                <h3>Nova tarefa</h3>
+                            </div>
+                            <span class="panel-index">01</span>
+                        </div>
+
+                        <div class="form-grid">
+                            <label class="field">
+                                <span>Título</span>
+                                <input type="text" id="titulo" placeholder="Ex.: finalizar atividade">
+                            </label>
+                            <label class="field field-wide">
+                                <span>Descrição</span>
+                                <input type="text" id="descricao" placeholder="Um pequeno detalhe sobre a tarefa">
+                            </label>
+                            <label class="field">
+                                <span>Data</span>
+                                <input type="date" id="data">
+                            </label>
+                        </div>
+                        <button class="primary-action compact" onclick="criarTarefa()">Adicionar tarefa <span>＋</span></button>
+                    </div>
+
+                    <div class="panel quick-stats">
+                        <div class="panel-heading">
+                            <div>
+                                <p class="eyebrow">RESUMO</p>
+                                <h3>Seu ritmo</h3>
+                            </div>
+                            <span class="panel-index">02</span>
+                        </div>
+                        <div class="stat-card"><span>Total cadastradas</span><strong id="stat-total">0</strong></div>
+                        <div class="stat-card"><span>Concluídas</span><strong id="stat-concluidas">0</strong></div>
+                        <div class="stat-card highlight"><span>Pendentes</span><strong id="stat-pendentes">0</strong></div>
+                    </div>
+                </section>
+
+                <section class="panel task-list-panel" id="lista">
+                    <div class="panel-heading list-heading">
+                        <div>
+                            <p class="eyebrow">ACOMPANHAMENTO</p>
+                            <h3>Lista de tarefas</h3>
+                        </div>
+                        <div class="search-actions">
+                            <label class="search-field">
+                                <span>⌕</span>
+                                <input type="text" id="busca" placeholder="Buscar por título..." onkeydown="if(event.key==='Enter') consultar()">
+                            </label>
+                            <button class="ghost-button" onclick="consultar()">Consultar</button>
+                            <button class="text-button" onclick="listarTarefas()">Mostrar todas</button>
+                        </div>
+                    </div>
+                    <div id="lista" class="task-list"></div>
+                </section>
+            </div>
+        </section>
+
+        <section id="secao-editar" class="edit-screen" style="display:none">
+            <div class="edit-card">
+                <div class="edit-kicker">EDIÇÃO</div>
+                <div class="edit-header">
+                    <div>
+                        <h2>Editar tarefa</h2>
+                        <p>Atualize os detalhes sem sair do fluxo.</p>
+                    </div>
+                    <button class="icon-close" onclick="cancelarEdicao()" aria-label="Fechar edição">×</button>
+                </div>
+
+                <input type="hidden" id="edit-id">
+                <div class="form-grid edit-grid">
+                    <label class="field field-wide">
+                        <span>Título</span>
+                        <input type="text" id="edit-titulo" placeholder="Título">
+                    </label>
+                    <label class="field field-wide">
+                        <span>Descrição</span>
+                        <input type="text" id="edit-descricao" placeholder="Descrição">
+                    </label>
+                    <label class="field">
+                        <span>Data</span>
+                        <input type="date" id="edit-data">
+                    </label>
+                    <label class="field">
+                        <span>Status</span>
+                        <select id="edit-status">
+                            <option value="PENDENTE">Pendente</option>
+                            <option value="CONCLUIDA">Concluída</option>
+                        </select>
+                    </label>
+                </div>
+
+                <div class="edit-actions">
+                    <button class="text-button" onclick="cancelarEdicao()">Cancelar</button>
+                    <button class="primary-action compact" onclick="salvarEdicao()">Salvar alterações <span>✓</span></button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="pages.js"></script>
+    <script>
+        function atualizarDataAtual() {
+            const alvo = document.getElementById('data-atual');
+            if (!alvo) return;
+            alvo.textContent = new Intl.DateTimeFormat('pt-BR', { weekday: 'short', day: '2-digit', month: 'short' }).format(new Date());
+        }
+        atualizarDataAtual();
+    </script>
+</body>
+</html>
